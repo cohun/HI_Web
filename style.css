@@ -1,0 +1,284 @@
+
+
+
+#product-overview {
+    /* background: linear-gradient(to top, rgb(211, 211, 211, 0.2) 5%, transparent), url(images/fedo.jpg), maroon;  */
+    background-image: linear-gradient(rgba(211, 211, 211, 0.12), rgba(211, 211, 211, 0.22)), url(images/fedo.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    box-shadow: 1px 1px 1px 1px rgb(51, 102, 204, 0.7);
+    max-width: 100%;
+    height: 45vh;
+    padding: 10px;
+    margin-top: 75px;
+    position: relative;
+  }
+
+/*   .main {
+    background-image: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.30)), url(images/indít.jpg);
+    filter: grayscale(25%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 38vw;
+    margin-top: 54px;
+    
+} */
+  
+  
+  #product-overview  h1 {
+    color: #d0d0d0;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    font-size: 0.95rem;
+    position: absolute;
+    top: 0.5%;
+    left: 0.2%;
+  }
+
+.brand {
+    background-color: #333;
+    color: #6fa0df;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-height: 153px;
+}
+.brand img {
+    width: 27vh;
+    padding: 1rem;
+}
+.magyar {
+    margin: 32px 0;
+    color: #fed130;
+}
+
+@media (max-width: 550px) {
+    .main {
+        margin-top: 34px;
+    }
+    .distributors img {
+        width: 35vh;
+        padding: 1rem;
+    }
+    .magyar {
+        font-size: 0.65rem;
+        margin: 18px 0;
+    }
+}
+
+
+/* CHOOSE YOUR PLAN */
+
+.section-titles {
+    color: rgb(102, 154, 251);
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #1F2739;
+    border-bottom: 2px solid #3366cc;
+  }
+.plan {
+    background-color: rgb(13, 172, 159);
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0.5rem;
+    width: 96%;
+    transform: scale(0.97);
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .plan:hover {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  .plan--highlited {
+    background-color: #d0d0d0;
+    color: #3366cc;
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
+  }
+  .plan__annotation {
+    padding: 10px;
+    background-color: beige;
+    display: inline-block;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    width: 70%;
+    border-radius: 5px;
+    
+  }
+  
+  .plan__title {
+    color: rgb(5, 66, 5);
+  }
+  .plan__title img {
+      width: 6rem;
+  }
+  .plan__price {
+    color: #4b4a4a;
+    margin: 8px 0;
+  }
+  
+  .plan__features {
+    /* list-style: none; */
+    margin: 0;
+    padding: 1rem 3rem;
+    text-align: left;
+  }
+  .plan__features li {
+    margin: 8px 0;
+  }
+  @media (min-width: 40rem) {
+    .plan {
+      display: inline-block;
+      width: 30%;
+      vertical-align: middle;
+    }
+    .plans__list {
+      width: 100%;
+      text-align: center;
+    } 
+    .plan--highlited {
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);  
+  }
+    .plan__annotation {
+      min-width: 12rem;
+      max-width: 20rem;;
+    }  
+  }
+
+
+
+  /* DISTRIBUTORS */
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    color: #FB667A;
+    padding: 12px 0;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: #d0d0d0;
+    color: #3366cc;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+  .distributors {
+    color: rgb(102, 154, 251);
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #1F2739;
+    border-bottom: 2px solid #3366cc;
+}
+.distributors h1 {
+    height: 64px;
+    text-align: center;
+    padding-top: 8px;
+    
+    margin: 24px 0;
+}
+.companies {
+    list-style: none;
+}
+.map {
+    width: 100%;
+    margin: 8px 96px 16px 8px;
+}
+.map img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    transform: scale(0.97);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.map img:hover {
+    opacity: 1;
+    transform: scale(1.03);    
+}
+
+.hi img {
+    transform: scale(0.97);
+    transition: transform 0.5s, opacity 0.5s;
+    padding-top: 12px;
+}
+.hi img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 150px 100px auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+article {
+   padding: 4px 0 4px 16px;
+   font-size: 60%;
+   text-align: left;
+   vertical-align: middle;
+}
+article a {
+  color: #d0d0d0;
+}
+
+.hi a img {
+    width: 5rem;
+    padding: 12px 0 0 0;
+    
+}
+
+@media (min-width: 800px) {
+    article {
+        font-size: 90%;
+    }
+    .wrapper {
+        grid-template-columns: 0.5fr 150px auto;
+    }
+    .hi a img {
+        width: 5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .main {
+       /*  margin-top: 34px; */
+    }
+    .distributors h1 {
+        font-size: 110%;
+        height: 48px;
+    }
+    .map img {
+        min-width: 160px;
+        padding-top: 2px;
+    }
+    .hi a img {
+        width: 3rem;
+    }
+    article {
+        font-size: 55%;
+    }
+   .wrapper {
+        grid-template-columns: 155px 40px auto;
+    } 
+    .tooltip .tooltiptext {
+        width: 85px;
+        font-size: 0.45rem;
+}
